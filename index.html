@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>MoveInSync Assignment</title>
+        <script src="script.js"></script>
+       <link rel="stylesheet" href="style.css">
+
+    </head>
+
+<body>
+<table class="mytable">
+    <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>City</th>
+        <th>Degree</th>
+        <th>Timestamp</th>
+    </tr>
+    <tr>
+        <td>MoveInSync</td>
+        <td>1</td>
+        <td>Bengaluru</td>
+        <td>Assignment</td>
+        <td>Mon Apr 12 2021 18:27:19</td>
+    </tr>
+</table>
+<button class="popup" onclick="openform()">Add User</button>
+
+<!--Div for popup-->
+<div class="popup_form">
+    <form action="#" class="user_form" method="post" name="PopupForm">
+      <h1>Add User</h1>
+      <label for="Name"><b>Name</b></label>
+      <input id="Name" name="Name" placeholder="Name" type="text">
+      <label for="City"><b>City</b></label>
+      <select name="City">
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Mumbai">Mumbai</option>
+      </select>
+      <input id="City" name="City" placeholder="City" type="text">
+      <input id="Degree" name="degree" placeholder="Degree" type="text">
+
+
+    </form>
+</div>
+
+</body>
+</html>
