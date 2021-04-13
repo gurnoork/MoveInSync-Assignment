@@ -13,8 +13,8 @@ function AddRow()
     var NewRow=AddRown.insertRow(n);
     list1[x] = document.getElementById("name").value;
     list2[x]=id++;
-	list3[x] = document.getElementById("city").value;
-	list4[x] = document.getElementById("degree").value;
+    list3[x] = document.getElementById("city").value;
+    list4[x] = document.getElementById("degree").value;
     list5[x]=new Date();
     var cel1=NewRow.insertCell(0);
     var cel2=NewRow.insertCell(1);
