@@ -1,47 +1,49 @@
 <html>
     <head>
-        <title>MoveInSync Assignment</title>
-        <script src="script.js"></script>
-       <link rel="stylesheet" href="style.css">
-
+        <title>MoveInSync</title>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
 <body>
-<table class="mytable">
-    <tr>
-        <th>Name</th>
-        <th>ID</th>
-        <th>City</th>
-        <th>Degree</th>
-        <th>Timestamp</th>
-    </tr>
-    <tr>
-        <td>MoveInSync</td>
-        <td>1</td>
-        <td>Bengaluru</td>
-        <td>Assignment</td>
-        <td>Mon Apr 12 2021 18:27:19</td>
-    </tr>
-</table>
-<button class="popup" onclick="openform()">Add User</button>
+    <table class="mytable" id="showtable">
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>City</th>
+            <th>Degree</th>
+            <th>Timestamp</th>
+        </tr>
+    </table>
 
-<!--Div for popup-->
-<div class="popup_form">
-    <form action="#" class="user_form" method="post" name="PopupForm">
+
+    <div class="center">
+        <button class="button-open" onclick="openform()">Add User</button>
+    </div>
+
+
+    <!--Div for popup-->
+<div class="popup-form" id="myform">
+    <form action="#" class="user-form" name="PopupForm">
       <h1>Add User</h1>
-      <label for="Name"><b>Name</b></label>
-      <input id="Name" name="Name" placeholder="Name" type="text">
-      <label for="City"><b>City</b></label>
-      <select name="City">
-          <option value="Bengaluru">Bengaluru</option>
-          <option value="Delhi">Delhi</option>
-          <option value="Chennai">Chennai</option>
-          <option value="Mumbai">Mumbai</option>
+      <label for="name"><b>Name</b></label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+      <br>
+      <label for="city"><b>City</b></label>
+      <select id="city" name="city">
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Mumbai">Mumbai</option>
       </select>
-      <input id="City" name="City" placeholder="City" type="text">
-      <input id="Degree" name="degree" placeholder="Degree" type="text">
+      <br>
 
+      <label for="degree"><b>Degree</b></label>
+      <input id="degree" name="degree" placeholder="Degree" type="text">
+      <br>
 
+      <button type="button" class="btn" onclick="closeform(); AddRow()">Save</button>
+      
     </form>
 </div>
 
