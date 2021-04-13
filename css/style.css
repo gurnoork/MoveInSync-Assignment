@@ -1,0 +1,94 @@
+.body
+{
+    font-family:Arial, Helvetica, sans-serif;
+}
+*
+{
+    box-sizing:border-box;
+}
+.mytable
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse:collapse;
+    width:100%;
+}
+
+.mytable th{
+    padding-top:12px;
+    padding-bottom:12px;
+    text-align:left;
+    background-color: antiquewhite;
+    color:black;
+
+}
+
+/*button used to open form */
+.button-open
+{
+    background-color:black;
+    color:white;
+    padding:16px 20px;
+    border:none;
+    cursor:pointer;
+    opacity:0.8;
+    position:fixed;
+    bottom:23px;
+    right:28px;
+    width:280px;
+}
+
+/*popup form which is hidden by default*/
+.popup-form
+{
+    display:none;
+    position:fixed;
+    bottom:0;
+    right:15px;
+    
+    z-index:9;
+}
+
+/*adding styles to userform*/
+.user-form
+{
+    max-width:300px;
+    padding:10px;
+    background-color:teal;
+}
+.user-form input[type=text], .user-form input[type=password]
+{
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    border:none;
+    background:turquoise;
+}
+.user-form input[type=text]:focus, .user-form input[type=password]:focus 
+{
+    background-color: #ddd;
+    outline: none;
+}
+/* Set a style for the submit/login button */
+.user-form .btn 
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Adding a red bg color to cancel button */
+  .user-form .cancel 
+  {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .user-form .btn:hover, .button-open:hover 
+  {
+    opacity: 1;
+  }
